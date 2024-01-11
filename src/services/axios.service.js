@@ -1,6 +1,6 @@
 import axios from "axios";
 import Cookies from "js-cookie";
-import { successToast } from "@/utils/toaster";
+import { errorToast } from "@/utils/toaster";
 
 // import getConfig from 'next/config'
 // const { publicRuntimeConfig } = getConfig()
@@ -30,7 +30,7 @@ const onRequest = (request) => {
     return request;
 
     } else {
-      successToast("Please check your internet connection");
+      errorToast("Please check your internet connection");
     }
 }
 

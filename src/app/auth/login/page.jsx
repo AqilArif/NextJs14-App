@@ -18,15 +18,15 @@ const Login = () => {
       // setStorageItem("user", response);
       // setUser(response);
       // router.push("/");
-      successToast("Login successfully!");
+      // successToast("Login successfully!");
     } catch (error) {
-      errorToast(error);
+      // errorToast(error);
     }
   };
 
-  // useEffect(() => {
-  //   handleLogin()
-  // }, [])
+  useEffect(() => {
+    handleLogin()
+  }, [])
   
   return (
     <div className="auth_container py-10">
@@ -48,7 +48,7 @@ const Login = () => {
               // register={register}
               // errors={errors}
             /> */}
-            <ButtonUI type="submit" onClick={handleLogin} fullWidth>
+            <ButtonUI type="submit" fullWidth>
               Login
             </ButtonUI>
           </form>

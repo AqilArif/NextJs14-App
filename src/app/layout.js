@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header'
 import './globals.css'
 import { NextUIThemeProvider } from '@/config/provider/NextUIThemeProvider'
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: 'Next.js',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
       </NextUIThemeProvider>
+      <Toaster />
     </body>
   </html>
   )
